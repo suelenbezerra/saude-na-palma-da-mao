@@ -1,0 +1,25 @@
+ROTEIRO DE DEMONSTRAÇÃO DO PWA
+
+Preparação: informar integrantes; iniciar node server.cjs; abrir http://localhost:4173; evitar usar dados pessoais reais; manter uma aba aberta após o primeiro carregamento; conferir a página Instalar aplicativo.
+
+1. Proposta: facilitar agendamento e acompanhamento de consultas, com foco em leitura, compreensão e autonomia de pessoas idosas. Explicar que a agenda é fictícia.
+2. Telas: mostrar início, escolha de clínica/especialidade/profissional e horários. Mostrar adaptação ao celular e ao computador, ajuste de leitura e contraste.
+3. Funcionalidade: criar conta ou explorar demonstração; agendar; revisar; abrir Consultas; reagendar; cancelar com confirmação; recarregar e mostrar a persistência.
+4. Manifest: abrir dist/manifest.json. Explicar nome, nome curto, ícones, cores, início e display standalone.
+5. Service Worker: abrir dist/sw.js. Explicar o CACHE versionado e a lista ASSETS. Mostrar o registro em DevTools → Application → Service Workers e os arquivos em Cache Storage.
+6. Offline: após a primeira abertura completa, ativar Offline na aba Network do DevTools ou desconectar a rede. Recarregar. Navegar e criar uma reserva de demonstração. Recarregar novamente e mostrar o registro.
+7. Instalação: quando suportada, instalar pelo navegador e abrir o aplicativo sem a barra de endereços. No iOS, usar Adicionar à Tela de Início. Não apresentar a instalação como concluída antes de executá-la no dispositivo.
+8. Painel: abrir Sobre o projeto → Painel. Explicar as três perguntas, origem sintética e uma linha por sessão. Trocar período/idade/clínica e baixar CSV. Demonstrar taxa de abandono como numerador/denominador. Em 30 dias, todas as clínicas, grupo 60+: 60 sessões, 24 abandonos, taxa 40%. Os valores do recorte mudam com os filtros.
+9. Limites e próximos passos: armazenamento é local e não sincroniza entre computadores. Sem integração com clínicas reais, SMS ou avaliação clínica por IA. Próximas etapas possíveis: aprovação final do grupo, testes com pessoas/tecnologias assistivas, backend compartilhado se necessário, e adaptação React Native conforme a outra atividade.
+
+IMPORTANTE: não diga que a base sintética é a mesma de 45.230 sessões do material anterior. Não use as capturas do protótipo como prova de funcionamento offline. Mostre o aplicativo executando o percurso.
+
+
+ATUALIZAÇÃO V2 — BACKEND
+1. Abra o endereço Vercel e crie uma conta online com dados fictícios. Guarde o código de recuperação.
+2. Agende uma consulta e entre na mesma conta em outro navegador para mostrar a persistência no servidor.
+3. Demonstre reagendamento, cancelamento, perfil, exportação e saída.
+4. Explique Node.js em Docker na Vercel, PostgreSQL Supabase, sessões/códigos por hash e concorrência protegida.
+5. Para a demonstração offline, use Explorar demonstração após primeiro acesso completo. Não prometa reservar no servidor sem internet.
+6. Painel continua com sessões sintéticas identificadas. Não são pesquisa com pacientes ou dados clínicos reais.
+7. Não há repositório GitHub; fonte, Dockerfile, SQL e documentação estão no ZIP v2.

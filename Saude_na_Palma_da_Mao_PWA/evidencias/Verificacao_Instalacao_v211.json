@@ -1,0 +1,23 @@
+{
+  "versao": "2.1.1",
+  "url": "https://saude-na-palma-da-mao-six.vercel.app/",
+  "deploymentId": "dpl_Ha6QKdnePUBMjkcK84LssDoiy7s6",
+  "status": "READY",
+  "testesExistentes": 13,
+  "recursosPublicosComHashCorrespondente": 14,
+  "largurasVerificadas": [
+    320,
+    412
+  ],
+  "leituraAmpliada": 1.3,
+  "preferenciasRestauradas": true,
+  "instalacaoNativaOferecidaNoChrome": true,
+  "recursosOffline": "Prontos, conforme verificação pela interface",
+  "instalacaoConcluidaAutomaticamente": false,
+  "errosConsole": 0,
+  "capturas": [
+    "Instalacao_Destaque_Desktop_v211.jpg",
+    "Instalacao_Destaque_Celular_v211.jpg"
+  ],
+  "github": false
+}

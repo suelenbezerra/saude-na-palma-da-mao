@@ -1,0 +1,75 @@
+{
+  "dataReferenciaCliente": "2026-11-25",
+  "timezone": "America/Sao_Paulo",
+  "versao": "2.0.0",
+  "provedor": "Vercel",
+  "status": "READY",
+  "ambiente": "production",
+  "conta": "mariobrandao0",
+  "equipe": "marios-projects-f887da85",
+  "teamId": "team_E9EONw32RgN4TtBRRLVXHkrm",
+  "projectId": "prj_sRRtPcNOmAw9XT6ZZen9vPcBriE9",
+  "deploymentId": "dpl_8TEdBzSsgvnxEPkimfHM1tNWHqzt",
+  "nome": "saude-na-palma-da-mao",
+  "url": "https://saude-na-palma-da-mao-six.vercel.app/",
+  "painel": "https://vercel.com/marios-projects-f887da85/saude-na-palma-da-mao",
+  "metodo": "20 arquivos enviados diretamente à API Vercel. Dockerfile construído por Buildah, imagem OCI no VCR e execução no Container Runtime. Nenhum repositório Git/GitHub conectado.",
+  "runtime": "Node.js 24, imagem node:24-alpine, usuário node, HTTP na porta 8080",
+  "imagem": "vcr.vercel.com/marios-projects-f887da85/saude-na-palma-da-mao/dockerfile@sha256:d4ef4ff0c26649cd64894ccd4f5b1d94477374ea3b308311f31541648dc6d8bd",
+  "supabase": {
+    "nome": "saude-na-palma-da-mao",
+    "ref": "gungfzwsltprcdvjgwap",
+    "url": "https://gungfzwsltprcdvjgwap.supabase.co",
+    "painel": "https://supabase.com/dashboard/project/gungfzwsltprcdvjgwap",
+    "regiao": "sa-east-1 / São Paulo",
+    "banco": "PostgreSQL",
+    "tabelas": [
+      "spm_users",
+      "spm_sessions",
+      "spm_bookings",
+      "spm_events",
+      "spm_rate_limits"
+    ],
+    "autenticacao": "Implementada na API Node.js; não usa Supabase Auth."
+  },
+  "seguranca": {
+    "tabelas": "RLS habilitado, sem grants para anon/authenticated. Somente backend com chave secreta moderna.",
+    "sessoes": "Cookie HttpOnly/Secure/SameSite=Lax, validade 7 dias; token armazenado por hash.",
+    "senha": "scrypt com sal aleatório; recuperação por código aleatório de 128 bits, guardado por hash, substituído após uso.",
+    "tentativas": "Limites persistidos no PostgreSQL; identificadores por HMAC, sem IP bruto.",
+    "advisor": {
+      "erros": 0,
+      "avisos": 0,
+      "informativos": 5,
+      "explicacao": "RLS Enabled No Policy nas cinco tabelas é intencional: acesso de clientes bloqueado e API com autenticação própria."
+    },
+    "hardening": "Permissão pública da função automática rls_auto_enable() revogada; backend/hardening.sql aplicado."
+  },
+  "verificacao": {
+    "testesLocais": 9,
+    "testesAPIComBancoReal": 16,
+    "navegador": "Login, fluxo de reserva, confirmação, leitura após recarregar e logout no Chrome do usuário.",
+    "arquivosPublicos": "14 arquivos HTTP 200 com SHA-256 idêntico à fonte local.",
+    "limpeza": "Três contas temporárias e seus registros foram removidos. SQL confirmou zero contas, consultas, sessões e eventos.",
+    "relatorios": [
+      "evidencias/Testes_Unidade_v2.txt",
+      "evidencias/Testes_Backend_Remoto_v2.json",
+      "evidencias/Verificacao_Vercel.json",
+      "evidencias/Docker_Build_v2.txt"
+    ],
+    "capturas": [
+      "evidencias/Agendamento_Online_v2.jpg",
+      "evidencias/Supabase_Regras_v2.jpg",
+      "evidencias/Supabase_Seguranca_v2.jpg",
+      "evidencias/Supabase_Limpeza_Testes_v2.jpg",
+      "evidencias/PWA_Backend_Publicado_v2.jpg"
+    ]
+  },
+  "limites": [
+    "Agenda acadêmica fictícia, sem consultas médicas reais.",
+    "Telefone identifica a conta, mas não é verificado por SMS. Recuperação usa código.",
+    "Conta online requer internet para acessar ou alterar registros. Demonstração local separada preservada.",
+    "Contas antigas do navegador não foram migradas.",
+    "Sem pesquisa com participantes, certificação WCAG ou instalação manual final."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "passou",
+  "testes": [
+    "Trocar conexão preserva os campos do formulário",
+    "Edição de perfil persiste",
+    "Exportação de calendário contém o evento e a data corretos",
+    "Dez rotas sem recorte horizontal em 320px com texto ampliado",
+    "Verificação de instalação/offline apresenta estado real",
+    "Excluir conta exige confirmação e remove as consultas locais"
+  ]
+}

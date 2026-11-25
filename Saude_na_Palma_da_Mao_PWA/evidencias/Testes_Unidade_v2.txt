@@ -1,0 +1,18 @@
+✔ Senha tem sal independente, valida somente o segredo correto e não aparece em resposta pública (99.1028ms)
+✔ Chave secreta moderna usa apikey somente no servidor, sem tratá-la como JWT (40.4079ms)
+{"event":"api_error","requestId":"3751b2fa-cb08-4659-9eeb-c5bf837a60b0","status":503,"code":"upstream"}
+✔ Configuração ausente não finge persistência no servidor (8.3718ms)
+✔ Solicitações sem sessão não acessam nem alteram consultas (11.3876ms)
+✔ Bloqueia origem diferente e JSON ausente antes de escrever (5.2374ms)
+✔ Valida cadastro, datas impossíveis e concordância no servidor (8.5596ms)
+✔ Cadastro emite cookie HttpOnly, SameSite e Secure; não retorna hashes ou token em JSON (29.059ms)
+✔ Listagem e mutação usam o usuário da sessão e ignoram um userId forjado (5.9436ms)
+✔ Respostas antigas não apagam um login novo nem restauram uma sessão encerrada (22.826ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 283.2546

@@ -1,0 +1,9 @@
+{
+  "name":"saude-na-palma-da-mao",
+  "version":"2.1.1",
+  "type":"module",
+  "private":true,
+  "description":"PWA acadêmica com backend Node.js, Docker e PostgreSQL no Supabase",
+  "scripts":{"start":"node --env-file-if-exists=.env.local server.cjs","check":"node tests/check.cjs","test:backend":"node --test tests/backend.test.cjs tests/session-races.test.cjs tests/navigation-cache.test.cjs"},
+  "engines":{"node":">=24"}
+}

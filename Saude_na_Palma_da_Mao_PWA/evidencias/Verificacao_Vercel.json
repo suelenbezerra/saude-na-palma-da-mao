@@ -1,0 +1,106 @@
+{
+  "url": "https://saude-na-palma-da-mao-six.vercel.app/",
+  "verificadoEm": "2026-11-25T13:07:42.527Z",
+  "ambiente": "HTTPS público, sem cookies ou autenticação",
+  "arquivos": [
+    {
+      "arquivo": "css/style.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "sha256": "54ddeac8c92c95acb59709b642213f966a0e02e426b3120884e98c7fbc01e491",
+      "bytes": 22544
+    },
+    {
+      "arquivo": "icons/apple-touch-icon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "sha256": "02285088be8dc3339b7dcae57d7115fbfeb718854e24f4a8fa413a0e1bea3ccb",
+      "bytes": 3509
+    },
+    {
+      "arquivo": "icons/icon-192.png",
+      "status": 200,
+      "contentType": "image/png",
+      "sha256": "ae79521255bad66c5962907365936bc4d7d57500d37ad2e59f35ac8b57771748",
+      "bytes": 3839
+    },
+    {
+      "arquivo": "icons/icon-512.png",
+      "status": 200,
+      "contentType": "image/png",
+      "sha256": "ae378404a2acdd25d27b84162fd55fa62a44f8e364de4e934f13489476e1e3b2",
+      "bytes": 14476
+    },
+    {
+      "arquivo": "icons/icon-maskable-512.png",
+      "status": 200,
+      "contentType": "image/png",
+      "sha256": "ae378404a2acdd25d27b84162fd55fa62a44f8e364de4e934f13489476e1e3b2",
+      "bytes": 14476
+    },
+    {
+      "arquivo": "icons/marca.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "sha256": "e07e226377f13fa2b5e43d900bd7053b30979a16e678eab623c87a906e07df57",
+      "bytes": 440
+    },
+    {
+      "arquivo": "index.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "c95da6a64818da1cd09145e17a1a03b301beb32fc530b5a30b9d4a9bc375ae25",
+      "bytes": 1336
+    },
+    {
+      "arquivo": "js/app.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "545127401547af4aff93c118cc3e72a2d816eee68be1cf1ba739f97610536d45",
+      "bytes": 24201
+    },
+    {
+      "arquivo": "js/data.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "93b982287533a97cfe06ee43b2658fa242b99cfa6ebde95db74745d8f0528e63",
+      "bytes": 3926
+    },
+    {
+      "arquivo": "js/demo-store.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "2a960b14ecdb1362ba7293656685862f0f1f6954471b4655651a34b3ced180c3",
+      "bytes": 6718
+    },
+    {
+      "arquivo": "js/store.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "3a02116944d5b48c0c7d56115283d7cc22b1a7ba309236d1792bee185ae6f014",
+      "bytes": 6719
+    },
+    {
+      "arquivo": "js/views.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "18acb47cffadbf9a08be403169aff7d077abf10ba6ce00d82f71e08f86bf5e4f",
+      "bytes": 36426
+    },
+    {
+      "arquivo": "manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "f1abf0b116d85eee0bf9c4450ce6ca23bf75d681c5deb4d2c93d448a8db26f40",
+      "bytes": 908
+    },
+    {
+      "arquivo": "sw.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "c7b80b4a8ab096cabb88bfdb8bf8bc5c4c3920b548a1910cc175dc96ef72ce80",
+      "bytes": 1565
+    }
+  ],
+  "aprovado": true
+}

@@ -1,0 +1,22 @@
+✔ Senha tem sal independente, valida somente o segredo correto e não aparece em resposta pública (97.036ms)
+✔ Chave secreta moderna usa apikey somente no servidor, sem tratá-la como JWT (38.726ms)
+{"event":"api_error","requestId":"6ff680d7-3e95-4081-8e92-3742709c6db2","status":503,"code":"upstream"}
+✔ Configuração ausente não finge persistência no servidor (8.2921ms)
+✔ Solicitações sem sessão não acessam nem alteram consultas (10.4501ms)
+✔ Bloqueia origem diferente e JSON ausente antes de escrever (5.552ms)
+✔ Valida cadastro, datas impossíveis e concordância no servidor (9.6772ms)
+✔ Cadastro emite cookie HttpOnly, SameSite e Secure; não retorna hashes ou token em JSON (29.4462ms)
+✔ Listagem e mutação usam o usuário da sessão e ignoram um userId forjado (5.8159ms)
+✔ Consulta três dias de disponibilidade em uma leitura e não expõe dados de pacientes (4.6495ms)
+✔ Dados carregados navegam sem rede; atualizações duplicadas compartilham uma requisição (21.4989ms)
+✔ Alterações confirmadas atualizam o cache sem releitura e sem ressuscitar respostas antigas (2.5734ms)
+✔ Horários são pré-carregados em lote, reaproveitados e descartados após mudança de conta (2.2192ms)
+✔ Respostas antigas não apagam um login novo nem restauram uma sessão encerrada (22.4037ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 294.2434

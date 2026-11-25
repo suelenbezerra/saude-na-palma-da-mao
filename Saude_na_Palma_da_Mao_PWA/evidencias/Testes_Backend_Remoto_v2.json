@@ -1,0 +1,72 @@
+{
+  "url": "https://saude-na-palma-da-mao-six.vercel.app",
+  "executadoEm": "2026-11-25T11:50:41.355Z",
+  "testes": [
+    {
+      "name": "Backend e conexão PostgreSQL saudáveis",
+      "status": "passou"
+    },
+    {
+      "name": "Sem sessão e origem externa não acessam dados privados",
+      "status": "passou"
+    },
+    {
+      "name": "Cadastro persistente, recuperação inicial e cookies protegidos",
+      "status": "passou"
+    },
+    {
+      "name": "Mesma conta acessível em sessão independente",
+      "status": "passou"
+    },
+    {
+      "name": "Disputa simultânea: só uma reserva para o mesmo profissional/horário",
+      "status": "passou"
+    },
+    {
+      "name": "Disponibilidade compartilhada sem revelar pacientes ou consultas",
+      "status": "passou"
+    },
+    {
+      "name": "Outra conta não consegue reagendar ou cancelar a consulta",
+      "status": "passou"
+    },
+    {
+      "name": "Mesma pessoa não agenda dois profissionais no mesmo horário",
+      "status": "passou"
+    },
+    {
+      "name": "Reagendamento mantém identificador e histórico",
+      "status": "passou"
+    },
+    {
+      "name": "Reagendamento em conflito preserva a reserva original",
+      "status": "passou"
+    },
+    {
+      "name": "Cancelamento mantém histórico e libera o horário",
+      "status": "passou"
+    },
+    {
+      "name": "Edição do perfil persistida no banco",
+      "status": "passou"
+    },
+    {
+      "name": "Recuperação troca código, encerra sessões e invalida a senha antiga",
+      "status": "passou"
+    },
+    {
+      "name": "Limite persistente bloqueia tentativas repetidas de acesso",
+      "status": "passou"
+    },
+    {
+      "name": "Sair revoga a sessão no servidor",
+      "status": "passou"
+    },
+    {
+      "name": "Exclusão remove contas de teste e revoga sessões",
+      "status": "passou"
+    }
+  ],
+  "resultado": "passou",
+  "limpeza": "As duas contas temporárias e seus registros vinculados foram excluídos pela própria API."
+}

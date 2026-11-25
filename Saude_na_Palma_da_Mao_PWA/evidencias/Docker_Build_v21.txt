@@ -1,0 +1,12 @@
+STEP 1/10: FROM node:24-alpine
+STEP 2/10: WORKDIR /app
+STEP 3/10: ENV NODE_ENV=production TZ=America/Recife PORT=8080 HOST=0.0.0.0
+STEP 4/10: COPY package.json ./
+STEP 5/10: COPY backend ./backend
+STEP 6/10: COPY dist ./dist
+STEP 7/10: COPY server.cjs ./
+STEP 8/10: USER node
+STEP 9/10: EXPOSE 8080
+STEP 10/10: CMD ["node", "server.cjs"]
+▲ container  Image reference vcr.vercel.com/marios-projects-f887da85/saude-na-palma-da-mao/dockerfile@sha256:d3a176964423f2f9428e3a2d5b000da9014e65fa334d701a8f3bcda28a72e654
+Deployment completed

@@ -1,0 +1,30 @@
+{
+  "dataReferenciaCliente": "2026-11-23",
+  "timezone": "America/Sao_Paulo",
+  "provedor": "Vercel",
+  "status": "READY",
+  "ambiente": "production",
+  "conta": "mariobrandao0",
+  "equipe": "marios-projects-f887da85",
+  "teamId": "team_E9EONw32RgN4TtBRRLVXHkrm",
+  "projectId": "prj_sRRtPcNOmAw9XT6ZZen9vPcBriE9",
+  "deploymentId": "dpl_FhD5p36HUaJz9kZjRXB7bdkrBYnw",
+  "nome": "saude-na-palma-da-mao",
+  "url": "https://saude-na-palma-da-mao-six.vercel.app/",
+  "painel": "https://vercel.com/marios-projects-f887da85/saude-na-palma-da-mao",
+  "metodo": "Envio direto de 13 arquivos estáticos por Vercel MCP/API. Sem conexão com Git ou envio ao GitHub.",
+  "arquivosEnviados": 13,
+  "bytesEnviados": 126075,
+  "verificacao": {
+    "httpsPublico": "13/13 arquivos retornaram HTTP 200 sem autenticação; SHA-256 idêntico à versão local.",
+    "navegador": "Chrome do usuário: abriu o aplicativo; perfil de demonstração; escolha de clínica, especialidade, profissional, dia e horário; confirmação de agendamento; consulta preservada após recarregar.",
+    "comprovante": "evidencias/Publicacao_Vercel.jpg",
+    "relatorio": "evidencias/Verificacao_Vercel.json"
+  },
+  "limites": [
+    "Agenda fictícia, sem consultas médicas reais.",
+    "Contas e consultas persistem somente no navegador/origem; sem sincronização entre dispositivos.",
+    "Registros de localhost não são transferidos automaticamente ao domínio publicado.",
+    "Funcionamento offline e critérios de instalabilidade testados localmente; confirmação manual de instalação não executada nesta publicação."
+  ]
+}

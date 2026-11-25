@@ -1,0 +1,139 @@
+{
+  "dataReferenciaCliente": "2026-11-25",
+  "timezone": "America/Sao_Paulo",
+  "versao": "2.1.1",
+  "provedor": "Vercel",
+  "status": "READY",
+  "ambiente": "production",
+  "conta": "mariobrandao0",
+  "equipe": "marios-projects-f887da85",
+  "teamId": "team_E9EONw32RgN4TtBRRLVXHkrm",
+  "projectId": "prj_sRRtPcNOmAw9XT6ZZen9vPcBriE9",
+  "deploymentId": "dpl_Ha6QKdnePUBMjkcK84LssDoiy7s6",
+  "nome": "saude-na-palma-da-mao",
+  "url": "https://saude-na-palma-da-mao-six.vercel.app/",
+  "painel": "https://vercel.com/marios-projects-f887da85/saude-na-palma-da-mao",
+  "metodo": "20 arquivos enviados diretamente à API Vercel. Dockerfile construído por Buildah, imagem OCI no VCR e execução no Container Runtime. Nenhum repositório Git/GitHub conectado.",
+  "runtime": "Node.js 24, imagem node:24-alpine, usuário node, HTTP na porta 8080",
+  "imagem": "Imagem OCI construída pela Vercel para dpl_Ha6QKdnePUBMjkcK84LssDoiy7s6; digest não consultado nesta atualização.",
+  "supabase": {
+    "nome": "saude-na-palma-da-mao",
+    "ref": "gungfzwsltprcdvjgwap",
+    "url": "https://gungfzwsltprcdvjgwap.supabase.co",
+    "painel": "https://supabase.com/dashboard/project/gungfzwsltprcdvjgwap",
+    "regiao": "sa-east-1 / São Paulo",
+    "banco": "PostgreSQL",
+    "tabelas": [
+      "spm_users",
+      "spm_sessions",
+      "spm_bookings",
+      "spm_events",
+      "spm_rate_limits"
+    ],
+    "autenticacao": "Implementada na API Node.js; não usa Supabase Auth."
+  },
+  "seguranca": {
+    "tabelas": "RLS habilitado, sem grants para anon/authenticated. Somente backend com chave secreta moderna.",
+    "sessoes": "Cookie HttpOnly/Secure/SameSite=Lax, validade 7 dias; token armazenado por hash.",
+    "senha": "scrypt com sal aleatório; recuperação por código aleatório de 128 bits, guardado por hash, substituído após uso.",
+    "tentativas": "Limites persistidos no PostgreSQL; identificadores por HMAC, sem IP bruto.",
+    "advisor": {
+      "erros": 0,
+      "avisos": 0,
+      "informativos": 5,
+      "explicacao": "RLS Enabled No Policy nas cinco tabelas é intencional: acesso de clientes bloqueado e API com autenticação própria."
+    },
+    "hardening": "Permissão pública da função automática rls_auto_enable() revogada; backend/hardening.sql aplicado."
+  },
+  "verificacao": {
+    "testesLocais": 13,
+    "testesAPIComBancoReal": 17,
+    "navegador": "Login, fluxo de reserva, confirmação, leitura após recarregar e logout no Chrome do usuário.",
+    "arquivosPublicos": "14 arquivos HTTP 200 com SHA-256 idêntico à fonte local.",
+    "limpeza": "Somente as duas contas temporárias e os registros criados pelo teste remoto foram excluídos; contas já existentes não foram alteradas.",
+    "relatorios": [
+      "evidencias/Testes_Unidade_v21.txt",
+      "evidencias/Testes_Backend_Remoto_v21.json",
+      "evidencias/Verificacao_Navegacao_v21.json",
+      "evidencias/Verificacao_Vercel.json"
+    ],
+    "capturas": [
+      "evidencias/Agendamento_Online_v2.jpg",
+      "evidencias/Supabase_Regras_v2.jpg",
+      "evidencias/Supabase_Seguranca_v2.jpg",
+      "evidencias/Supabase_Limpeza_Testes_v2.jpg",
+      "evidencias/PWA_Backend_Publicado_v2.jpg"
+    ],
+    "navegacao": "Conta, Consultas, Início e Ajustar leitura verificadas no Chrome; ampliação testada e restaurada, sem exceções JavaScript."
+  },
+  "limites": [
+    "Agenda acadêmica fictícia, sem consultas médicas reais.",
+    "Telefone identifica a conta, mas não é verificado por SMS. Recuperação usa código.",
+    "Conta online requer internet para acessar ou alterar registros. Demonstração local separada preservada.",
+    "Contas antigas do navegador não foram migradas.",
+    "Sem pesquisa com participantes, certificação WCAG ou instalação manual final."
+  ],
+  "otimizacaoNavegacao": {
+    "versao": "2.1.0",
+    "causas": [
+      "render() esperava repo.sync() em toda renderização, com cache de somente 1,5 segundo.",
+      "Disponibilidade era buscada novamente a cada renderização da etapa de horário.",
+      "Abertura do agendamento esperava o envio de um evento de contagem.",
+      "Gravações confirmadas esperavam uma releitura completa da conta.",
+      "Autenticação realizava duas consultas sequenciais para sessão e perfil."
+    ],
+    "alteracoes": [
+      "Renderização imediata a partir do estado em memória.",
+      "Revalidação em segundo plano nas telas de dados, com validade de 30 segundos e sem sobrescrever formulários em edição.",
+      "Ajustar leitura e preferências não consultam a API.",
+      "Deduplicação de sincronizações concorrentes e proteção contra respostas antigas.",
+      "Perfil e consultas atualizados pelo retorno confirmado da própria gravação.",
+      "Pré-carregamento dos três dias visíveis em lote, cache de horários por 15 segundos e validação da reserva no servidor.",
+      "Evento de início do agendamento enviado sem bloquear a navegação.",
+      "Sessão e perfil obtidos em uma consulta relacional ao Supabase."
+    ],
+    "validacao": {
+      "testesLocais": 13,
+      "testesBancoReal": 17,
+      "recursosPublicosPorHash": 14,
+      "telasConferidas": [
+        "Conta",
+        "Consultas",
+        "Início",
+        "Ajustar leitura"
+      ],
+      "leitura": "Ampliação testada e preferência original restaurada.",
+      "errosConsole": 0,
+      "relatorios": [
+        "evidencias/Testes_Unidade_v21.txt",
+        "evidencias/Testes_Backend_Remoto_v21.json",
+        "evidencias/Verificacao_Navegacao_v21.json",
+        "evidencias/Verificacao_Vercel.json"
+      ]
+    },
+    "limites": [
+      "Primeiro carregamento, login e gravações continuam dependendo da conexão e do servidor.",
+      "Revalidação em segundo plano pode refletir alterações feitas em outro dispositivo.",
+      "Medições do controle do navegador incluem transporte/polling da automação e não são um benchmark isolado de renderização."
+    ]
+  },
+  "publicacaoAnterior": {
+    "versao": "2.1.0",
+    "deploymentId": "dpl_6n9eEy1r2ShhKXiXLF5gf8oNbrUj",
+    "imagem": "vcr.vercel.com/marios-projects-f887da85/saude-na-palma-da-mao/dockerfile@sha256:d3a176964423f2f9428e3a2d5b000da9014e65fa334d701a8f3bcda28a72e654"
+  },
+  "destaqueInstalacao": {
+    "versao": "2.1.1",
+    "alteracao": "Faixa de instalação no início/apresentação, acesso na navegação principal do computador, prompt nativo quando disponível e instruções alternativas.",
+    "testesLocais": 13,
+    "checagemPWA": "Estrutura, manifest, ícones e sintaxe aprovados",
+    "logicaInstalacao": "Fallback, prompt de uso único, falha do prompt e modo instalado conferidos",
+    "recursosPublicosPorHash": 14,
+    "largurasConferidas": [
+      320,
+      412
+    ],
+    "leitura": "Escala 1.3 testada e restaurada",
+    "instalacaoEfetiva": "Não concluída automaticamente; depende do usuário e da plataforma."
+  }
+}

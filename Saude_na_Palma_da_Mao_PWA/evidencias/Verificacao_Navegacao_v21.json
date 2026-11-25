@@ -1,0 +1,27 @@
+{
+  "telas": [
+    {
+      "tela": "Conta",
+      "verificada": true,
+      "tempoAutomacaoMs": 91
+    },
+    {
+      "tela": "Consultas",
+      "verificada": true,
+      "tempoAutomacaoMs": 95
+    },
+    {
+      "tela": "Início",
+      "verificada": true,
+      "tempoAutomacaoMs": 1153
+    },
+    {
+      "tela": "Ajustar leitura",
+      "verificada": true,
+      "tempoAutomacaoMs": 1006
+    }
+  ],
+  "leituraTestada": true,
+  "preferenciaRestaurada": "Padrão",
+  "observacao": "Tempos são da automação, incluindo comunicação e polling de seletores; não são benchmark isolado da aplicação."
+}

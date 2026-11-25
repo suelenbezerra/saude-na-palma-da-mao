@@ -1,0 +1,120 @@
+{
+  "executadoEm": "2026-11-24T02:27:55.086Z",
+  "ambiente": "Chrome headless local / Playwright",
+  "testes": [
+    {
+      "name": "Cadastro e código de recuperação",
+      "status": "passou"
+    },
+    {
+      "name": "Busca, seleção e agendamento persistente",
+      "status": "passou",
+      "detail": {
+        "id": "ab7b7cab-5f95-46f6-9a50-207553b93bf3",
+        "userId": "ec79bcc7-844b-4996-81b7-1c2f1db2f9bd",
+        "clinicId": "recanto",
+        "specialtyId": "cardio",
+        "professionalId": "helena",
+        "date": "2026-11-24",
+        "time": "09:00",
+        "status": "scheduled",
+        "createdAt": "2026-11-24T02:27:52.583Z",
+        "updatedAt": "2026-11-24T02:27:52.583Z",
+        "previous": [],
+        "ageGroup": "60+"
+      }
+    },
+    {
+      "name": "Consulta e sessão preservadas após recarregar",
+      "status": "passou"
+    },
+    {
+      "name": "Reagendamento modifica a mesma consulta",
+      "status": "passou",
+      "detail": {
+        "id": "ab7b7cab-5f95-46f6-9a50-207553b93bf3",
+        "userId": "ec79bcc7-844b-4996-81b7-1c2f1db2f9bd",
+        "clinicId": "recanto",
+        "specialtyId": "cardio",
+        "professionalId": "helena",
+        "date": "2026-11-25",
+        "time": "09:00",
+        "status": "scheduled",
+        "createdAt": "2026-11-24T02:27:52.583Z",
+        "updatedAt": "2026-11-24T02:27:52.888Z",
+        "previous": [
+          {
+            "date": "2026-11-24",
+            "time": "09:00"
+          }
+        ],
+        "ageGroup": "60+"
+      }
+    },
+    {
+      "name": "Conflito de horário impede duplicação",
+      "status": "passou",
+      "detail": "Esse horário não está mais disponível. Escolha outro."
+    },
+    {
+      "name": "Confirmação, desistência e cancelamento persistente",
+      "status": "passou"
+    },
+    {
+      "name": "Leitura ampliada e contraste em 320/390/768/1280 px",
+      "status": "passou"
+    },
+    {
+      "name": "Erro de acesso, recuperação e entrada com nova senha",
+      "status": "passou"
+    },
+    {
+      "name": "Dashboard: filtro, cálculo e CSV conferidos",
+      "status": "passou",
+      "detail": {
+        "total180": true,
+        "grupo60": 60,
+        "taxa": "40,0%",
+        "recorte7dias": 18
+      }
+    },
+    {
+      "name": "Service Worker controla a página e cache contém dependências",
+      "status": "passou",
+      "detail": [
+        "/",
+        "/css/style.css",
+        "/js/app.js",
+        "/js/data.js",
+        "/js/store.js",
+        "/js/views.js",
+        "/manifest.json",
+        "/icons/icon-192.png",
+        "/icons/icon-512.png",
+        "/icons/icon-maskable-512.png",
+        "/icons/apple-touch-icon.png",
+        "/index.html"
+      ]
+    },
+    {
+      "name": "Offline: recarregar, navegar, agendar e persistir",
+      "status": "passou"
+    },
+    {
+      "name": "Critérios de instalabilidade no Chrome sem erros",
+      "status": "passou",
+      "detail": {
+        "installabilityErrors": []
+      }
+    },
+    {
+      "name": "Sem exceções JavaScript durante os percursos",
+      "status": "passou"
+    }
+  ],
+  "limites": [
+    "Instalação com confirmação do usuário não foi executada.",
+    "Sem teste com participantes.",
+    "Sem sincronização entre dispositivos."
+  ]
+}

@@ -1,0 +1,19 @@
+PRIMEIRA ENTREGA PWA - ÍCARO
+Fonte: enunciado encaminhado pelo usuário. Não sabemos se o grupo já realizou a primeira entrega. O 0/10 do texto original é apenas o indicador do modelo de checklist.
+
+1. Aplicação web funcional: IMPLEMENTADO E TESTADO no servidor local.
+2. Telas iniciais e navegação: IMPLEMENTADO E TESTADO nos percursos de acesso e consultas.
+3. Responsividade: IMPLEMENTADO; verificação de leitura ampliada em 320, 390, 768 e 1280 px, além de capturas desktop.
+4. Funcionalidade real: IMPLEMENTADO; CRUD de consultas locais e cadastro/edição/exclusão de conta de demonstração.
+5. Web App Manifest vinculado: IMPLEMENTADO E CONFERIDO em index.html.
+6. Identidade: IMPLEMENTADO; name, short_name, ícones 192/512/maskable, cores, start_url, scope e standalone.
+7. Service Worker: IMPLEMENTADO; registro e controle da página conferidos no navegador.
+8. Cache dos essenciais: IMPLEMENTADO; verificado HTML, CSS, módulos, manifest e ícones.
+9. Offline após primeiro acesso: TESTADO; recarregar, navegar, agendar e recuperar consulta persistida sem rede.
+10. Instalação: CRITÉRIOS DE INSTALABILIDADE CONFERIDOS NO CHROME, sem erros. A confirmação final de instalação pelo usuário não foi executada; realizar no dispositivo da apresentação, quando suportada.
+
+Não confundir: proposta de telas, PWA funcional e aplicativo React Native são entregas diferentes. Esta pasta contém o PWA acadêmico, com dados locais e agenda fictícia. Não confirma que o grupo já apresentou qualquer etapa.
+
+
+ATUALIZAÇÃO V2 — 25/11/2026
+O projeto agora também tem backend Node.js em Docker na Vercel e PostgreSQL no Supabase, com contas e consultas online. Os itens e testes locais acima descrevem a versão 1 como histórico. Na versão 2, 9 testes locais de API/sessão e 16 percursos com banco real passaram; o navegador confirmou acesso, agendamento e persistência online. A demonstração local foi preservada para o uso offline, e a conta online exige internet para alterações. Manifest, SW/cache atualizado e 14 arquivos públicos foram conferidos. Instalação manual final continua pendente. Ver README e evidências v2.

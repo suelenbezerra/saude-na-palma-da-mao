@@ -1,0 +1,10 @@
+node_modules
+.git
+.vercel
+.openai
+.env
+.env.*
+evidencias
+tests
+*.zip
+*.log

@@ -1,0 +1,10 @@
+node_modules/
+.sites-runtime/
+.sites-checkout/
+*.log
+evidencias/Falha_*
+.env
+.env.*
+!.env.example
+.vercel/
+.openai/
